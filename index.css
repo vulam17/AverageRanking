@@ -1,0 +1,153 @@
+@font-face
+{
+    font-family: myfont;
+    src:url("asset/Roboto-Light.ttf")
+}
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: white;
+}
+.container
+{
+    width:98%;
+    margin:20px auto;
+    font-family: myfont;
+    background-color: #4076c2;
+    padding:10px;
+    box-shadow: 0 0 15px 0 #4076c2;
+}
+h1, caption
+{
+    text-align: center;
+    font-size: 52px;
+    letter-spacing: 5px;
+    margin:20px auto;
+    color:white;
+}
+fieldset
+{
+    font-size:20px;
+    padding:10px;
+    border: 1px solid #949494;
+    margin:10px 0;
+    background-color: #4076c2;
+    color:white;
+}
+legend
+{
+    font-weight: bold;
+    padding:10px;
+}
+caption
+{
+    font-size: 25px;
+    color:white;
+}
+input
+{
+    display:block;
+    width:40%;
+    padding:10px;
+    font-size: 18px;
+    margin: 7px auto;
+    border: none;
+    border-radius: 5px;
+}
+input:focus
+{
+    outline:none;
+}
+button
+{
+    display:block;
+    width:40%;
+    padding:13px 8px;
+    font-size: 18px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 5px;
+    transition:0.3s;
+    background-color: #1ca0a3;
+}
+button:hover
+{
+    background-color: #82f5ff;
+    cursor:pointer;
+}
+#btn
+{
+    width:50%;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+table
+{
+    margin:30px auto;
+    width:100%;
+    border-collapse:collapse;
+}
+tr:nth-child(even)
+{
+    background-color: #2e65b8;
+}
+th, td
+{
+    border:1px solid #bbbdbb;
+    text-align: center;
+    padding:3px;
+}
+i
+{
+    display:inline-block;
+    font-size: 25px;
+    margin:0 7px;
+    cursor:pointer;
+}
+#sortButtonHide
+    {
+        display: none;
+    }
+.footer
+{
+    color:rgba(255,255,255,0.2);
+    font-size: 12px;
+    font-style:italic;
+    margin:20px 0 0 0;
+    display: flex;
+    justify-content: flex-end;
+}
+/* Responsive */
+@media screen and (max-width:800px)
+{
+    input
+    {
+        width:100%;
+    }
+    #btn
+    {
+        display:block;
+        width:100%;
+    }
+    button, #btn button
+    {
+        width:100%;
+        padding:25px 0;
+        display: block;
+    }
+    #sortButtonHide
+    {
+        display: block;
+    }
+    #sortIcon
+    {
+        display: none;
+    }
+}

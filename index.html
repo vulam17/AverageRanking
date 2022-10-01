@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking Managemenet System</title>
+    <link rel="icon" type="icon/x-image" href="asset/icon.jpg">
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
+    <script src="https://kit.fontawesome.com/ea9a0dec7a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>HỆ THỐNG XẾP HẠNG ĐIỂM SINH VIÊN</h1>
+        <fieldset>
+            <legend>Nhập</legend>
+            <input type="text" id = "ten" placeholder="Họ và tên">
+            <input type="text" id = "toan" placeholder="Điểm Toán">
+            <input type="text" id = "ly" placeholder="Điểm Lý">
+            <input type="text" id = "hoa" placeholder="Điểm Hóa">
+        <button onclick = checkData()>Lưu</button>
+        </fieldset>
+        <fieldset>
+            <legend>Dữ liệu</legend>
+            <table id = "moreData">
+                <tr>
+                    <td style="color:white; font-style:italic;border:none;">Chưa có dữ liệu. Bạn hãy nhập dữ liệu</td>
+                </tr>
+            </table>
+        </fieldset>
+        <div id = "btn"></div>
+        <p class = "footer">Copyright &copy; by vulam. Contact: vulam.17@gmail.com</p>
+    </div>
+</body>
+</html>
