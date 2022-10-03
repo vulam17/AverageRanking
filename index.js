@@ -126,7 +126,7 @@ function largestToSmallest()
     sortType = true;
     sort()
 }
-function selectSort()//1 nút cho cả chức năng lọc từ to đến nhỏ và từ nhỏ đến to
+function selectSort()//1 nút cho cả chức năng lọc từ to đến nhỏ và từ nhỏ đến to khi màn hình nhỏ
 {
     if ((document.getElementById("sortButtonHide").innerHTML === "Sắp xếp tăng") && (array.length !== 0)) 
     {
@@ -140,7 +140,7 @@ function selectSort()//1 nút cho cả chức năng lọc từ to đến nhỏ v
     }
     if(array.length === 0) alert("Không có dữ liệu để sắp xếp")
 }
-function markAll()
+function markAll()//Chọn tất cả
 {
     tongleMark = document.getElementById("deleteAll").checked
     if (tongleMark === true)
@@ -158,7 +158,7 @@ function markAll()
         }
     }
 }
-function del()
+function del()//xóa
 {
     let statusCheckBox = 0;
     if(array.length === 0) alert("Không có dữ liệu để xóa")
